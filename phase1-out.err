@@ -1,0 +1,20 @@
+Usage: executable serverIPAddr:port, fileToReceive
+connection to server failed
+Usage: executable PortNum fileToTransfer
+bind failed
+SimpleFTPServerPhase1: no process found
+SimpleFTPServerPhase1: no process found
+SimpleFTPServerPhase1: no process found
+SimpleFTPServerPhase1: no process found
+./kill_after_TOSLEEP.sh: line 8: kill: (17609) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17613) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17617) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17621) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17634) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17638) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17658) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17662) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17682) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17686) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17706) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (17710) - No such process

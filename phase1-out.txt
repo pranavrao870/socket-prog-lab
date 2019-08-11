@@ -1,0 +1,53 @@
+############## Testing Phase1 IITB.160100021 ##########################
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client with no args
+$cmd
+Exit code 1, marks=0.5
+Running client with wrong port 2319
+$cmd
+Exit code 2, marks=0.5
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running server with no args
+$cmd
+Exit code 1, marks=0.5
+Running server on already bound python port 2011
+$cmd
+Exit code 2, marks=0.5
+Running server at port 2319 file=file1K.txt
+STDOUT_REDIR=server-out-phase1-1.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 10.129.158.81:2319
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+ser_md5=a2e6a97954cb09ec962b0a5dd4169ccb
+cli_md5=a2e6a97954cb09ec962b0a5dd4169ccb
+marks=1
+Running server at port 2320 file=file200K.txt
+STDOUT_REDIR=server-out-phase1-2.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 10.129.158.81:2320
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+ser_md5=35eedb1994a9c9ab3750c91ba1a6f8cf
+cli_md5=35eedb1994a9c9ab3750c91ba1a6f8cf
+marks=1
+Running server at port 2321 file=file200K.pdf
+STDOUT_REDIR=server-out-phase1-3.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 10.129.158.81:2321
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+ser_md5=72afb06e5ea01cf41ee5803bfe75d173
+cli_md5=72afb06e5ea01cf41ee5803bfe75d173
+marks=1
+Running server at port 2322 file=file1M.jpg
+STDOUT_REDIR=server-out-phase1-4.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 10.129.158.81:2322
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+ser_md5=a12410f7610964ee967b41e5d6cecc52
+cli_md5=a12410f7610964ee967b41e5d6cecc52
+marks=1
+PHASE1_MARKS=0+0.5+0.5+0.5+0.5+1+1+1+1=6.0
+############## Done Phase1 IITB.160100021 ##########################

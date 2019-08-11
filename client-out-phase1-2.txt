@@ -1,0 +1,3 @@
+$cmd
+ConnectDone: 10.129.158.81:2320
+FileWritten: 172710 bytes

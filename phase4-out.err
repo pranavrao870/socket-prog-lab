@@ -1,0 +1,8 @@
+Done putting the file at server :172710
+Done putting the file at server :197096
+./timed.sh: line 17: 10565 Terminated              stdbuf -o0 $cmd > "$STDOUT_REDIR"
+./kill_after_TOSLEEP.sh: line 8: kill: (10565) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (10595) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (10600) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (10605) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (10614) - No such process

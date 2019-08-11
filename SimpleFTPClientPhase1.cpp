@@ -1,0 +1,77 @@
+#include <iostream>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <string.h>
+#include <cstdlib>
+#include <stdio.h>
+#include <string>
+#include <unistd.h>
+
+using namespace std;
+
+int main(int argc, char** argv)
+{
+    if(argc != 3)
+    {
+        cerr<<"Usage: executable serverIPAddr:port, fileToReceive\n";
+        exit(1);
+    }
+    //char serverIp[20], serverPort[10];
+    string temp = argv[1];
+    const char* serverIp = temp.substr(0, temp.find(':')).c_str();
+    int serverPortN = atoi(temp.substr(temp.find(':') + 1, temp.size()).c_str());
+
+    int sock = 0;
+    if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+    {
+        cerr<<"socket failed\n";
+        exit(-1);
+    }
+
+    struct sockaddr_in serverAddr;
+    serverAddr.sin_family = AF_INET;
+    serverAddr.sin_port = htons(serverPortN);
+    if(inet_aton(serverIp, &(serverAddr.sin_addr)) == 0)
+    {
+        cerr<<"Ip conversion failed\n";
+        exit(-1);
+    }
+    memset(&(serverAddr.sin_zero), '\0', 8);
+
+    if(connect(sock, (struct sockaddr*)&serverAddr, sizeof(serverAddr)) < 0)
+    {
+        cerr<<"connection to server failed\n";
+        exit(2);
+    }
+    else
+    {
+        cout<<"ConnectDone: "<<serverIp<<':'<<serverPortN<<'\n';
+    }
+    int len = 1024;
+    char buffer[len];  //the max bytes that are sent is 1024 from the other size
+    FILE *recvFile = fopen(argv[2], "w");
+    if(recvFile == NULL)
+    {
+        cerr<<"File cannot be created at the client\n";
+        exit(3);
+    }
+    bzero(buffer, len);
+    int lenRecvd = 0, totalBytes = 0;
+    while((lenRecvd = recv(sock, buffer, len, 0)) > 0)
+    {
+        totalBytes += lenRecvd;
+        int lenWritten = fwrite(buffer, sizeof(char), lenRecvd, recvFile);
+        if(lenWritten < lenRecvd)
+        {
+            cerr<<"Data cannot be written properly at the client at the client\n";
+            exit(3);
+        }
+        bzero(buffer, len);
+    }
+
+    fclose(recvFile);
+    close(sock);
+    cout<<"FileWritten: "<<totalBytes<<" bytes\n";
+    return 0;
+}

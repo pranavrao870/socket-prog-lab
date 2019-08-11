@@ -1,0 +1,5 @@
+BindDone: 2240
+ListenDone: 2240
+Client: 10.129.158.81:52976
+FileRequested: file200K.txt
+TransferDone: 172710 bytes

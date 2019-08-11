@@ -1,0 +1,5 @@
+BindDone: 2239
+ListenDone: 2239
+Client: 10.129.158.81:60916
+FileRequested: file1K.txt
+TransferDone: 1019 bytes

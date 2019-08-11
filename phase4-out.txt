@@ -1,0 +1,32 @@
+############## Testing Phase4 IITB.160100021 ##########################
+Running server at port 2075
+STDOUT_REDIR=server-out-phase4.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 0.0.0.0:2075 op=put file=file200K.txt.put interval=1
+STDOUT_REDIR=client-out-phase4-put-2.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+Running client to 0.0.0.0:2075 op=put file=file200K.pdf.put interval=1
+STDOUT_REDIR=client-out-phase4-put-3.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+Running client to 0.0.0.0:2075 op=get file=file200K.txt interval=1
+STDOUT_REDIR=client-out-phase4-get-2.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+Running client to 0.0.0.0:2075 op=get file=file200K.pdf interval=1
+STDOUT_REDIR=client-out-phase4-get-3.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+transfer_md5=6bf4dc84c9347563a5d461f37138274b
+expected_md5=35eedb1994a9c9ab3750c91ba1a6f8cf
+marks=0
+transfer_md5=72afb06e5ea01cf41ee5803bfe75d173
+expected_md5=72afb06e5ea01cf41ee5803bfe75d173
+marks=1
+transfer_md5=35eedb1994a9c9ab3750c91ba1a6f8cf
+expected_md5=35eedb1994a9c9ab3750c91ba1a6f8cf
+marks=1
+transfer_md5=72afb06e5ea01cf41ee5803bfe75d173
+expected_md5=72afb06e5ea01cf41ee5803bfe75d173
+marks=1
+PHASE4_MARKS=0+0+1+1+1=3
+############## Done Phase4 IITB.160100021 ##########################

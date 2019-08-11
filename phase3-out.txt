@@ -1,0 +1,21 @@
+############## Testing Phase3 IITB.160100021 ##########################
+Running server at port 2082
+STDOUT_REDIR=server-out-phase3.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 0.0.0.0:2082 file=file1M.jpg interval=20
+Running client to 0.0.0.0:2082 file=file1K.txt interval=1
+STDOUT_REDIR=client-out-phase3-4.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+STDOUT_REDIR=client-out-phase3-1.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+file=file1M.jpg
+ser_md5=a12410f7610964ee967b41e5d6cecc52
+cli_md5=5f07bdc1a892c6b631e57c33edd15224
+file=file1K.txt
+ser_md5=a2e6a97954cb09ec962b0a5dd4169ccb
+cli_md5=a2e6a97954cb09ec962b0a5dd4169ccb
+marks=0
+PHASE3_MARKS=0+0=0
+############## Done Phase3 IITB.160100021 ##########################

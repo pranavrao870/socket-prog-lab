@@ -1,0 +1,34 @@
+############## Testing Phase2 IITB.160100021 ##########################
+Running server at port 2239
+STDOUT_REDIR=server-out-phase2-1.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 10.129.158.81:2239 file=file1K.txt
+ser_md5=a2e6a97954cb09ec962b0a5dd4169ccb
+cli_md5=a2e6a97954cb09ec962b0a5dd4169ccb
+marks=1
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running server at port 2240
+STDOUT_REDIR=server-out-phase2-2.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 10.129.158.81:2240 file=file200K.txt
+ser_md5=35eedb1994a9c9ab3750c91ba1a6f8cf
+cli_md5=35eedb1994a9c9ab3750c91ba1a6f8cf
+marks=1
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running server at port 2241
+STDOUT_REDIR=server-out-phase2-3.txt
+stdbuf -o0 $cmd > "$STDOUT_REDIR"
+/tmp/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+Running client to 10.129.158.81:2241 file=file200K.pdf
+ser_md5=72afb06e5ea01cf41ee5803bfe75d173
+cli_md5=72afb06e5ea01cf41ee5803bfe75d173
+marks=1
+Running client to 10.129.158.81:2241 file=file1M.jpg
+ser_md5=a12410f7610964ee967b41e5d6cecc52
+cli_md5=a12410f7610964ee967b41e5d6cecc52
+marks=1
+~/teaching/cs224-spring2018/labs/socket-corr/submissions/IITB.160100021 ~/teaching/cs224-spring2018/labs/socket-corr
+PHASE2_MARKS=0+1+1+1+1=4
+############## Done Phase2 IITB.160100021 ##########################

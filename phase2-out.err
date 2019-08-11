@@ -1,0 +1,10 @@
+./timed.sh: line 17: 26797 Terminated              stdbuf -o0 $cmd > "$STDOUT_REDIR"
+./timed.sh: line 17: 26824 Terminated              stdbuf -o0 $cmd > "$STDOUT_REDIR"
+./timed.sh: line 17: 26851 Terminated              stdbuf -o0 $cmd > "$STDOUT_REDIR"
+./kill_after_TOSLEEP.sh: line 8: kill: (26797) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (26803) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (26824) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (26830) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (26851) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (26859) - No such process
+./kill_after_TOSLEEP.sh: line 8: kill: (26871) - No such process

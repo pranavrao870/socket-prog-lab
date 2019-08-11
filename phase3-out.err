@@ -1,0 +1,4 @@
+./timed.sh: line 17: 19844 Terminated              stdbuf -o0 $cmd > "$STDOUT_REDIR"
+./timed.sh: line 17: 19876 Terminated              stdbuf -o0 $cmd > "$STDOUT_REDIR"
+./kill_after_TOSLEEP.sh: line 8: kill: (19878) - No such process
+SimpleFTPServerPhase3: no process found

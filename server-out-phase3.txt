@@ -1,0 +1,8 @@
+BindDone: 2082
+ListenDone: 2082
+Client: 127.0.0.1:36992
+Client: 127.0.0.1:36990
+FileRequested: file1K.txt
+FileRequested: file1M.jpg
+TransferDone: 1019 bytes
+TransferDone: 1079331 bytes
